@@ -7,4 +7,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-end
+ resources :lists, exept: [:destroy]
+
+ resources :bookmars, only: :destroy
+ end
